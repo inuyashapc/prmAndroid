@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectprm_team2">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.projectprm_team2.Activity.Account.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.projectprm_team2.Activity.Account.ChangePasswordActivity"
+            android:exported="false" />
+
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+    </application>
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key" />
+
+    <activity
+        android:name="com.example.projectprm_team2.Activity.Admin.SignInAdminActivity"
+        android:screenOrientation="portrait"
+        tools:ignore="WrongManifestParent" />
+    <activity
+        android:name="com.example.projectprm_team2.Activity.Account.SignInActivity"
+        android:screenOrientation="portrait"
+        tools:ignore="WrongManifestParent" />
+    <activity
+        android:name="com.example.projectprm_team2.Activity.Account.SignUpActivity"
+        android:screenOrientation="portrait"
+        tools:ignore="WrongManifestParent" />
+    <activity
+        android:name="com.example.projectprm_team2.MainActivity"
+        android:exported="true"
+        tools:ignore="WrongManifestParent">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</manifest>
